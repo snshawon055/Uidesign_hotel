@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:ui_fight_app/custom_tools/custom_size.dart';
 
 import '../screen/home_screen.dart';
 
@@ -166,6 +167,33 @@ class CityCard extends StatelessWidget {
                     ],
                   ),
                 ),
+                Positioned(
+                  left: 15,
+                  top: 15,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Text(
+                        "New Price \$$newPrice",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      addHorizontalSpace(8),
+                      Text(
+                        "Old Price \$$oldPrice",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),

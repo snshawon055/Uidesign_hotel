@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final screens = [
     Column(
       children: [
-        HomeScreenTopPart(),
+        const HomeScreenTopPart(),
         homeScreenBottomPart,
       ],
     ),
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CustomAppBar(),
+      bottomNavigationBar: const CustomAppBar(),
       body: screens[index],
     );
   }
