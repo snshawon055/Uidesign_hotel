@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_fight_app/screen/home_screen.dart';
 
+import 'custom_tools/custom_bottom_app_bar.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: appTheme,
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
